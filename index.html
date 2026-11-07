@@ -1,0 +1,123 @@
+<!doctype html><html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Дыбыстар қалашығы</title><style>
+*{box-sizing:border-box}body{margin:0;font-family:'Times New Roman',serif;background:linear-gradient(#00b8f7 0%,#7ce7f5 62%,#a8e91b 63%,#5fc409 100%);min-height:100vh;color:#101c7d}header{text-align:center;font-size:clamp(27px,4.7vw,64px);font-weight:900;color:#e72826;-webkit-text-stroke:1px white;text-shadow:3px 4px #063cb5;padding:10px 4px}.banner{margin:5px auto 15px;background:#fff12c;border:4px solid white;border-radius:50px;box-shadow:0 6px #1882d8;text-align:center;font-weight:bold;font-size:clamp(20px,3.3vw,45px);max-width:1000px;padding:8px}.intro{background:#fffdf6;border:7px solid #0aa8e6;border-radius:45px;max-width:1050px;margin:15px auto;padding:30px;text-align:center;box-shadow:0 8px 20px #1479a9}.intro .scene{font-size:clamp(60px,11vw,140px)}.intro h1{color:#c83d2f;font-size:clamp(32px,5vw,64px)}button{font-family:inherit;font-weight:bold;cursor:pointer;border-radius:50px;border:4px solid white;box-shadow:0 5px #1258b6;background:linear-gradient(#21cafa,#053de9);color:white;font-size:clamp(20px,2.5vw,32px);padding:10px 28px}button.red{background:linear-gradient(#ff8c66,#d42014);box-shadow:0 5px #a42920;font-size:42px}.hidden{display:none!important}.houses{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px;margin:10px auto;max-width:1600px;padding:0 12px}.house{position:relative;min-width:0;padding-top:55px;filter:drop-shadow(0 6px 1px #1577ac)}.roof{position:absolute;top:0;left:0;width:100%;height:78px;clip-path:polygon(50% 0,100% 63%,100% 100%,0 100%,0 63%);background:#0346ed;border-radius:10px}.house.vowel .roof{background:#f12c25}.house.mixed .roof{background:linear-gradient(90deg,#f12c25 50%,#0346ed 50%)}.letter{position:absolute;top:18px;width:100%;text-align:center;font-size:clamp(36px,5vw,78px);line-height:1;color:white;-webkit-text-stroke:1.5px #131313;text-shadow:2px 3px #141414;font-weight:900}.house.mixed .letter{background:linear-gradient(90deg,#ff2929 50%,#0346ed 50%);background-clip:text;color:transparent;-webkit-text-stroke:1.4px #fff;text-shadow:none}.housebody{background:#fff59b;border:6px solid #084bf2;border-radius:0 0 25px 25px;padding:9px;height:clamp(145px,17vw,235px)}.house.vowel .housebody{border-color:#ee312a}.house.mixed .housebody{border-left-color:#ee312a;border-top-color:#ee312a}.drop{border:3px solid #3c8fea;border-radius:18px;background:#fff;display:flex;gap:5px;align-items:center;justify-content:center;height:100%;padding:5px}.drop img{width:47%;max-height:95%;object-fit:contain;border-radius:9px}.drop.over{background:#b6ffbd}.tray{background:#c9f8ff;border:4px solid #0cb7e7;border-radius:35px;max-width:1600px;margin:20px auto;padding:12px 7px;display:flex;align-items:center;gap:7px}.tiles{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:7px;flex:1}.tile{background:white;border:4px solid #0850f1;border-radius:18px;aspect-ratio:1/1;min-width:0;display:flex;align-items:center;justify-content:center;cursor:grab;padding:3px;touch-action:manipulation}.tile.vowel{border-color:#f23b35}.tile img{width:100%;height:100%;object-fit:contain;border-radius:12px;pointer-events:none}.tile.selected{outline:6px solid #ffd400}.tile.used{opacity:.2}.arrow{padding:7px 12px;font-size:32px}.controls{display:flex;align-items:center;justify-content:space-around;gap:8px;flex-wrap:wrap;padding:10px}.status{background:#fff21c;border:4px solid white;border-radius:40px;padding:12px;font-size:clamp(18px,2.4vw,31px);font-weight:bold}.message{text-align:center;min-height:45px;font-size:30px;font-weight:bold;color:#ba1421}.celebrate{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:10}.spark{position:absolute;font-size:35px;animation:fly 1.5s ease-out forwards}@keyframes fly{from{transform:translateY(0) scale(.4);opacity:1}to{transform:translateY(-75vh) rotate(720deg) scale(1.7);opacity:0}}@media(max-width:700px){.houses{gap:3px;padding:0 3px}.house{padding-top:36px}.roof{height:55px}.letter{top:12px;font-size:36px}.housebody{height:125px;padding:3px;border-width:3px}.drop{padding:1px;border-width:2px;gap:1px}.tiles{grid-template-columns:repeat(4,1fr)}.tray{margin:8px 4px}.arrow{padding:5px;font-size:20px}.controls button{font-size:20px;padding:8px}.intro{margin:10px}}
+.welcome{position:relative;width:min(100%,1648px);aspect-ratio:1648/928;margin:0 auto;background:url("welcome.png") center/100% 100% no-repeat}.welcome-start{position:absolute;left:34%;top:86%;width:32%;height:12%;background:transparent;border:0;box-shadow:none;border-radius:50px;cursor:pointer}.welcome-start:focus-visible{outline:5px solid #ffeb00}.house{padding-top:66px}.roof{height:93px;border:4px solid white;filter:drop-shadow(0 2px 1px #003d9d)}.letter{top:20px;z-index:2;font-size:clamp(40px,5.5vw,83px);line-height:1.05}.housebody{height:clamp(155px,17vw,235px)}.drop{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}.drop img{width:100%;height:100%;max-height:100%;object-fit:contain;border:2px solid #1680e9}.house.vowel .drop img{border-color:#ee312a}.message.success{position:fixed;inset:30% 15% auto;background:linear-gradient(#fff87c,#ffba12);border:8px solid white;border-radius:40px;box-shadow:0 0 0 8px #1377ed,0 15px 35px #2359a8;z-index:11;padding:30px;color:#e71918;font-size:clamp(35px,6vw,85px);text-shadow:2px 3px white}.spark{font-size:clamp(28px,4vw,60px)}@media(max-width:700px){.house{padding-top:39px}.roof{height:59px;border-width:2px}.letter{top:10px;font-size:clamp(28px,6vw,42px)}.housebody{height:125px}.drop{gap:2px}.drop img{border-width:1px}}
+
+/* Жылтыр, екі терезелі үлгі үйшіктер */
+.houses{gap:10px;padding:0 12px;margin-top:22px}
+.house{padding-top:112px;filter:drop-shadow(0 7px 1px #1975aa)}
+.roof{top:0;left:0;width:100%;height:120px;clip-path:polygon(0 65%,48% 4%,52% 4%,79% 40%,79% 16%,96% 16%,96% 58%,100% 65%,100% 100%,0 100%);border:0;border-radius:0;background:linear-gradient(155deg,#56caff 0%,#0787fc 25%,#0340df 62%,#001aa6 100%);filter:drop-shadow(0 2px 1px #fff)}
+.house.vowel .roof{background:linear-gradient(155deg,#ffb2a2 0%,#ff3b32 25%,#f00 65%,#b40000 100%)}
+.house.mixed .roof{background:linear-gradient(90deg,#f52721 0 50%,#0452f5 50% 100%)}
+.letter{top:38px;font-size:clamp(48px,5.4vw,88px);line-height:1;color:#fff;-webkit-text-stroke:2px #12121c;text-shadow:2px 3px #101025;z-index:3}
+.housebody{height:clamp(165px,17vw,245px);padding:13px 10px 12px;border:7px solid #0054ec;border-top:0;border-radius:0 0 28px 28px;background:linear-gradient(90deg,#ffdd38,#fff7a0 24%,#fff8a7 75%,#ffdf3c);box-shadow:inset 0 -8px 0 #ffce20,inset 0 0 0 3px #fff}
+.house.vowel .housebody{border-color:#ec1715}
+.house.mixed .housebody{border-left-color:#ec1715;border-right-color:#0054ec;border-bottom-color:#0054ec}
+.drop{background:transparent;border:0;border-radius:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;padding:0;align-items:stretch}
+.drop:empty:before,.drop:empty:after{content:"";display:block;min-width:0;height:100%;background:linear-gradient(#fff,#f7fbff);border:3px solid #0054ed;border-radius:23px;box-shadow:inset 0 2px 5px #c6d8fa}
+.house.vowel .drop:empty:before,.house.vowel .drop:empty:after{border-color:#e62020}
+.drop img{height:100%;width:100%;max-height:100%;object-fit:contain;background:white;border:3px solid #0054ed;border-radius:19px;padding:2px}
+.house.vowel .drop img{border-color:#e62020}
+.drop:has(img:only-child):after{content:"";display:block;min-width:0;height:100%;background:white;border:3px solid #0054ed;border-radius:19px}
+.house.vowel .drop:has(img:only-child):after{border-color:#e62020}
+@media(max-width:700px){.houses{gap:3px;padding:0 3px;margin-top:8px}.house{padding-top:52px}.roof{height:58px}.letter{top:16px;font-size:clamp(25px,6vw,42px);-webkit-text-stroke:1px #111}.housebody{height:125px;padding:5px 2px 4px;border-width:3px}.drop{gap:2px}.drop:empty:before,.drop:empty:after,.drop img,.drop:has(img:only-child):after{border-width:2px;border-radius:8px}}
+
+/* Keep supplied pictures as-is, without additional image frames or placeholder windows */
+.drop{display:flex!important;align-items:center;justify-content:center;gap:4px!important;padding:3px!important;border:0!important;background:transparent!important;overflow:hidden}
+.drop:empty:before,.drop:empty:after,.drop:has(img:only-child):after{display:none!important;content:none!important}
+.drop img,.house.vowel .drop img{border:0!important;border-radius:0!important;box-shadow:none!important;width:calc(50% - 2px)!important;height:100%!important;max-height:100%!important;object-fit:contain!important;flex:0 0 calc(50% - 2px)}
+.drop img:only-child{width:85%!important;flex-basis:85%}
+.tile img{border:0!important;object-fit:contain!important}
+.tile{border:0!important;background:transparent!important;box-shadow:none!important;padding:0!important}
+@media(max-width:700px){.drop{gap:1px!important;padding:0!important}.drop img{width:calc(50% - 1px)!important;flex-basis:calc(50% - 1px)}}
+
+/* Responsive picture layout: original picture frames only */
+.drop{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:4px!important;padding:2px!important;overflow:hidden!important;background:transparent!important}
+.drop img,.house.vowel .drop img{display:block!important;background:transparent!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;width:calc(50% - 2px)!important;flex:0 0 calc(50% - 2px)!important;height:auto!important;max-height:100%!important;object-fit:contain!important}
+.drop img:only-child{width:90%!important;flex-basis:90%!important}
+@media(max-width:700px){
+.housebody{height:clamp(165px,37vw,220px)!important;padding:3px 2px!important}
+.drop{flex-direction:column!important;gap:3px!important;padding:2px 0!important}
+.drop img,.house.vowel .drop img{width:auto!important;flex:0 1 auto!important;height:auto!important;max-width:100%!important;max-height:calc(50% - 2px)!important;object-fit:contain!important}
+.drop img:only-child{max-height:95%!important;max-width:100%!important}
+}
+
+/* Сурет саусақпен қозғалғанда браузердің суретті таңдауын болдырмау */
+.tile,.tile img{-webkit-user-select:none;user-select:none;-webkit-user-drag:none}.tile{touch-action:none;cursor:grab}.tile:active{cursor:grabbing}
+.touch-ghost{position:fixed;z-index:99999;pointer-events:none;transform:translate(-50%,-50%);width:90px;height:90px;object-fit:contain;background:transparent;filter:drop-shadow(0 5px 9px #2348a8);opacity:.93}
+.drop.over{outline:4px solid #19cc49!important;outline-offset:-3px;background:#d4ffd9!important}
+
+/* Құрылғыға бейімделген сурет орны: қосымша ақ қорапсыз */
+.drop,.drop.over{background:transparent!important;border:0!important;box-shadow:none!important}
+.drop:before,.drop:after{display:none!important;content:none!important}
+.drop img,.house.vowel .drop img{background:transparent!important;border:0!important;padding:0!important;box-shadow:none!important;object-fit:contain!important;min-width:0!important;min-height:0!important}
+.tiles,.tray{touch-action:pan-y}
+.tile,.tile img{touch-action:none!important;-webkit-touch-callout:none!important;user-select:none!important;-webkit-user-select:none!important}
+@media(max-width:700px){
+ .housebody{height:clamp(170px,38vw,230px)!important;padding:3px 1px!important}
+ .drop{display:flex!important;flex-direction:column!important;gap:2px!important;padding:0!important;align-items:center!important;justify-content:center!important}
+ .drop img,.house.vowel .drop img{width:100%!important;height:calc(50% - 1px)!important;max-width:100%!important;max-height:calc(50% - 1px)!important;flex:0 0 calc(50% - 1px)!important;object-fit:contain!important}
+ .drop img:only-child{height:85%!important;max-height:85%!important;flex-basis:85%!important;width:100%!important}
+}
+</style></head><body><header>🏰 ДЫБЫСТАР ҚАЛАШЫҒЫ 🌈</header><section id="intro" class="welcome" aria-label="Дыбыстар қалашығына қош келдің"><button id="start" class="welcome-start" aria-label="БАСТАУ"></button></section><main id="game" class="hidden"><div class="banner">Суретті тиісті үйшікке апар!</div><div id="houses" class="houses"></div><div class="tray"><button class="arrow" id="prev">❮</button><div id="tiles" class="tiles"></div><button class="arrow" id="next">❯</button></div><div class="message" id="message"></div><div class="controls"><div class="status" id="status"></div><button id="check">✓ Тексеру</button><button id="reset">↻ Басынан бастау</button><button id="sound">🔊 Дыбыс қосулы</button></div></main><div class="celebrate" id="confetti"></div><script>
+const items=[{"letter": "А", "src": "images/000.jpg"}, {"letter": "А", "src": "images/001.jpg"}, {"letter": "Б", "src": "images/002.jpg"}, {"letter": "Б", "src": "images/003.jpg"}, {"letter": "В", "src": "images/004.jpg"}, {"letter": "В", "src": "images/005.jpg"}, {"letter": "Г", "src": "images/006.jpg"}, {"letter": "Ғ", "src": "images/007.jpg"}, {"letter": "Г", "src": "images/008.jpg"}, {"letter": "Ғ", "src": "images/009.jpg"}, {"letter": "Д", "src": "images/010.jpg"}, {"letter": "Д", "src": "images/011.jpg"}, {"letter": "Е", "src": "images/012.jpg"}, {"letter": "Е", "src": "images/013.jpg"}, {"letter": "Ё", "src": "images/014.jpg"}, {"letter": "Ә", "src": "images/015.jpg"}, {"letter": "Ә", "src": "images/016.jpg"}, {"letter": "Ж", "src": "images/017.jpg"}, {"letter": "Ж", "src": "images/018.jpg"}, {"letter": "З", "src": "images/019.jpg"}, {"letter": "З", "src": "images/020.jpg"}, {"letter": "И", "src": "images/021.jpg"}, {"letter": "И", "src": "images/022.jpg"}, {"letter": "І", "src": "images/023.jpg"}, {"letter": "І", "src": "images/024.jpg"}, {"letter": "Й", "src": "images/025.jpg"}, {"letter": "К", "src": "images/026.jpg"}, {"letter": "К", "src": "images/027.jpg"}, {"letter": "Қ", "src": "images/028.jpg"}, {"letter": "Қ", "src": "images/029.jpg"}, {"letter": "Л", "src": "images/030.jpg"}, {"letter": "Л", "src": "images/031.jpg"}, {"letter": "М", "src": "images/032.jpg"}, {"letter": "М", "src": "images/033.jpg"}, {"letter": "Н", "src": "images/034.jpg"}, {"letter": "Н", "src": "images/035.jpg"}, {"letter": "Ң", "src": "images/036.jpg"}, {"letter": "Һ", "src": "images/037.jpg"}, {"letter": "О", "src": "images/038.jpg"}, {"letter": "О", "src": "images/039.jpg"}, {"letter": "Ө", "src": "images/040.jpg"}, {"letter": "Ө", "src": "images/041.jpg"}, {"letter": "П", "src": "images/042.jpg"}, {"letter": "П", "src": "images/043.jpg"}, {"letter": "Р", "src": "images/044.jpg"}, {"letter": "Р", "src": "images/045.jpg"}, {"letter": "С", "src": "images/046.jpg"}, {"letter": "С", "src": "images/047.jpg"}, {"letter": "Т", "src": "images/048.jpg"}, {"letter": "Т", "src": "images/049.jpg"}, {"letter": "У", "src": "images/050.jpg"}, {"letter": "Ү", "src": "images/051.jpg"}, {"letter": "Ү", "src": "images/052.jpg"}, {"letter": "Ұ", "src": "images/053.jpg"}, {"letter": "Ұ", "src": "images/054.jpg"}, {"letter": "Ф", "src": "images/055.jpg"}, {"letter": "Х", "src": "images/056.jpg"}, {"letter": "Ц", "src": "images/057.jpg"}, {"letter": "Ч", "src": "images/058.jpg"}, {"letter": "Ш", "src": "images/059.jpg"}, {"letter": "Ш", "src": "images/060.jpg"}, {"letter": "Щ", "src": "images/061.jpg"}, {"letter": "Ы", "src": "images/062.jpg"}, {"letter": "Ы", "src": "images/063.jpg"}, {"letter": "Э", "src": "images/064.jpg"}, {"letter": "Ю", "src": "images/065.jpg"}, {"letter": "Я", "src": "images/066.jpg"}];const stages=[["А", "Б", "Е", "В", "Ё"], ["Г", "Ә", "Ғ", "И", "Д"], ["У", "І", "Ж", "О", "З"], ["Ө", "Й", "Ү", "К", "Ұ"], ["Қ", "Ы", "Л", "Э", "М"], ["Ю", "Н", "Я", "Ң", "Һ"], ["П", "Р", "С", "Т", "Ф"], ["Х", "Ц", "Ч", "Ш", "Щ"]];const vowels=new Set('АӘЕЁИІОӨҰҮЫЭЮЯ'.split(''));let stage=0,page=0,selected=null,placements={},muted=false,ctx=null,transitioning=false;
+const $=id=>document.getElementById(id);const isV=l=>vowels.has(l);function audio(){if(muted)return;try{ctx=ctx||new(window.AudioContext||window.webkitAudioContext)();[523,659,784,1047].forEach((f,i)=>{let o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(.001,ctx.currentTime+i*.13);g.gain.exponentialRampToValueAtTime(.13,ctx.currentTime+i*.13+.02);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+i*.13+.19);o.connect(g).connect(ctx.destination);o.start(ctx.currentTime+i*.13);o.stop(ctx.currentTime+i*.13+.21)})}catch(e){}}function fireworks(){const c=$('confetti');c.innerHTML='';for(let i=0;i<65;i++){let s=document.createElement('span');s.className='spark';s.textContent=['✨','🎉','⭐','🎆','🌟'][i%5];s.style.left=Math.random()*100+'%';s.style.top=55+Math.random()*45+'%';s.style.animationDelay=Math.random()*.6+'s';c.appendChild(s)}setTimeout(()=>c.innerHTML='',2400)}
+function current(){return items.map((x,id)=>({...x,id})).filter(x=>stages[stage].includes(x.letter))}function place(id,l){if(!stages[stage].includes(l))return;let a=Object.keys(placements).filter(k=>placements[k]===l);if(a.length>=2 && !a.includes(String(id)))return;placements[id]=l;selected=null;render();autoComplete()}
+function render(){const data=current();$('houses').innerHTML=stages[stage].map(l=>`<div class="house ${l==='У'?'mixed':isV(l)?'vowel':'consonant'}"><div class="roof"></div><div class="letter">${l}</div><div class="housebody"><div class="drop" data-letter="${l}">${data.filter(x=>placements[x.id]===l).map(x=>`<img src="${x.src}" alt="Сурет">`).join('')}</div></div></div>`).join('');document.querySelectorAll('.drop img').forEach(img=>img.onclick=e=>{e.stopPropagation();let data=current().find(x=>x.src===img.getAttribute('src'));if(data&&!transitioning){delete placements[data.id];render()}});document.querySelectorAll('.drop').forEach(el=>{el.ondragover=e=>{e.preventDefault();el.classList.add('over')};el.ondragleave=()=>el.classList.remove('over');el.ondrop=e=>{e.preventDefault();el.classList.remove('over');place(e.dataTransfer.getData('text/plain'),el.dataset.letter)};el.onclick=()=>{if(selected!==null)place(selected,el.dataset.letter)}});let available=data.filter(x=>placements[x.id]===undefined);let maxPage=Math.max(0,Math.ceil(available.length/8)-1);page=Math.min(page,maxPage);$('tiles').innerHTML=available.slice(page*8,page*8+8).map(x=>`<div class="tile ${isV(x.letter)?'vowel':''} ${selected===x.id?'selected':''}" draggable="false" data-id="${x.id}" title="Суретті үйшікке апар"><img src="${x.src}" alt="${x.letter}"></div>`).join('');document.querySelectorAll('.tile').forEach(el=>{el.onclick=()=>{if(Date.now()<ignoreClickUntil)return;selected=+el.dataset.id;render()}});$('status').textContent=`${stage+1}-кезең / ${stages.length} · Қалған сурет: ${available.length}`;}
+
+// Сенсорлық экранда және компьютерде сүйрету: құжат деңгейінде бақылау.
+let dragging=null,ignoreClickUntil=0;
+const tileArea=$('tiles');
+function beginDrag(id,x,y,kind){
+ if(transitioning)return;
+ dragging={id:String(id),x,y,kind,moved:false,ghost:null};
+}
+function moveDrag(x,y){
+ const d=dragging;if(!d)return;
+ if(!d.moved&&Math.hypot(x-d.x,y-d.y)<8)return;
+ if(!d.moved){
+  const source=tileArea.querySelector(`.tile[data-id="${d.id}"] img`);
+  if(!source)return;
+  d.moved=true;d.ghost=source.cloneNode(true);d.ghost.className='touch-ghost';
+  document.body.appendChild(d.ghost);
+ }
+ d.ghost.style.left=x+'px';d.ghost.style.top=y+'px';
+ document.querySelectorAll('.drop.over').forEach(el=>el.classList.remove('over'));
+ document.elementFromPoint(x,y)?.closest('.drop')?.classList.add('over');
+}
+function endDrag(x,y,cancel=false){
+ const d=dragging;if(!d)return;dragging=null;
+ d.ghost?.remove();document.querySelectorAll('.drop.over').forEach(el=>el.classList.remove('over'));
+ if(!d.moved||cancel)return;
+ ignoreClickUntil=Date.now()+500;
+ const target=document.elementFromPoint(x,y)?.closest('.drop');
+ if(target)place(d.id,target.dataset.letter);
+ else{selected=+d.id;render()}
+}
+tileArea.addEventListener('touchstart',e=>{
+ const t=e.target.closest('.tile');if(!t||e.touches.length!==1)return;
+ const f=e.touches[0];beginDrag(t.dataset.id,f.clientX,f.clientY,'touch');
+},{passive:true});
+document.addEventListener('touchmove',e=>{
+ if(!dragging||dragging.kind!=='touch')return;
+ if(e.cancelable)e.preventDefault();
+ const f=e.touches[0];if(f)moveDrag(f.clientX,f.clientY);
+},{passive:false});
+document.addEventListener('touchend',e=>{
+ if(!dragging||dragging.kind!=='touch')return;
+ const f=e.changedTouches[0];if(f)endDrag(f.clientX,f.clientY);
+},{passive:false});
+document.addEventListener('touchcancel',()=>{if(dragging?.kind==='touch')endDrag(0,0,true)});
+tileArea.addEventListener('pointerdown',e=>{
+ if(e.pointerType==='touch'||e.button!==0)return;
+ const t=e.target.closest('.tile');if(t)beginDrag(t.dataset.id,e.clientX,e.clientY,'pointer');
+});
+document.addEventListener('pointermove',e=>{
+ if(dragging?.kind==='pointer')moveDrag(e.clientX,e.clientY);
+});
+document.addEventListener('pointerup',e=>{
+ if(dragging?.kind==='pointer')endDrag(e.clientX,e.clientY);
+});
+document.addEventListener('pointercancel',()=>{if(dragging?.kind==='pointer')endDrag(0,0,true)});
+$('start').onclick=()=>{$('intro').classList.add('hidden');$('game').classList.remove('hidden');render()};$('prev').onclick=()=>{page=Math.max(0,page-1);render()};$('next').onclick=()=>{page++;render()};$('sound').onclick=()=>{muted=!muted;$('sound').textContent=muted?'🔇 Дыбыс өшірулі':'🔊 Дыбыс қосулы'};$('reset').onclick=()=>{stage=0;page=0;selected=null;placements={};$('message').textContent='';$('message').classList.remove('success');transitioning=false;$('game').classList.add('hidden');$('intro').classList.remove('hidden')};function autoComplete(){if(transitioning)return;const data=current();if(!data.every(x=>placements[x.id]===x.letter))return;transitioning=true;audio();fireworks();$('message').textContent='🎉 ЖАРАЙСЫҢ! 🎉';$('message').classList.add('success');setTimeout(()=>{if(stage<stages.length-1){stage++;page=0;placements={};$('message').textContent='';$('message').classList.remove('success');transitioning=false;render()}else{$('message').textContent='🏆 ЖАРАЙСЫҢ! Барлық кезең аяқталды!';$('message').classList.add('success')}},2600)}
+$('check').onclick=()=>{if(transitioning)return;let data=current();if(data.some(x=>placements[x.id]===undefined)){$('message').textContent='Алдымен барлық суретті үйшіктерге орналастыр!';return}let wrong=data.filter(x=>placements[x.id]!==x.letter);if(wrong.length){wrong.forEach(x=>delete placements[x.id]);$('message').textContent=`${wrong.length} сурет қате орналастырылды. Қайта көр!`;page=0;render();return}autoComplete()};
+</script></body></html>
